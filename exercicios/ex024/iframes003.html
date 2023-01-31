@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela {
+            width: 95vw;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum natus fuga dicta amet similique? Deleniti, accusantium asperiores neque rerum, delectus quisquam rem quo dolore, pariatur odit eveniet molestiae numquam minus?
+    </p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit adipisci quam reiciendis iure atque, provident velit doloribus dolorum unde esse possimus magni laboriosam rerum blanditiis ea vitae dignissimos voluptatem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore nemo asperiores maxime dolores atque autem, quam debitis illum voluptates ducimus aliquid, sint velit necessitatibus labore animi perspiciatis, nam soluta.
+    </p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Clique em alguma opção acima!</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit adipisci quam reiciendis iure atque, provident velit doloribus dolorum unde esse possimus magni laboriosam rerum blanditiis ea vitae dignissimos voluptatem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolore nemo asperiores maxime dolores atque autem, quam debitis illum voluptates ducimus aliquid, sint velit necessitatibus labore animi perspiciatis, nam soluta</p><a></a>"> <p>Infelizmente seu navegador não é compatível!</p>
+    </iframe>
+
+    <!--
+        srcdoc - poderá ser usado para código básico. Em caso de algo mais elaborado, criar um arquivo separado.
+    -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos itaque eligendi officiis vitae doloremque dignissimos, consequatur, expedita consequuntur quaerat, id veniam! Ipsum aliquam quis eligendi doloribus. Dolores, pariatur maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam commodi quam, deleniti obcaecati aut qui ipsa quia autem sed reiciendis! Officia dolorem alias architecto natus! Quidem repudiandae beatae explicabo vero.
+    </p>   
+</body>
+</html>
