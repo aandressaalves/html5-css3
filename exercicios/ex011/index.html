@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Como colocar imagens dinâmicas?</h1>
+    <p>Observe os comentários do código</p>
+
+    <!-- ler os comentário de baixo pra cima. Essa ordem tem que ser obedecida -->
+
+    <picture>
+        <source media="(min-width: 750px)" srcset="imagemP" type="image/png"> <!-- se a largura da sua tela for inferior à 750px, será carregada a imagem de tamanho P -->
+
+        <source media="(min-width: 1050px )" srcset="imagemM" type="image/png"> <!-- se a largura da sua tela for inferior à 1050px, será carregada a imagem de tamanho M -->
+
+        <img src="imagemG" alt="Imagem Grande"> <!-- essa é a imagem de tamanho G -->
+    </picture>
+
+    <h1>Como reproduzir áudios?</h1>
+    <p>Observe os comentários do código</p>
+    
+    <audio src="audioAqui" controls autoplay></audio>
+
+    <p>ou</p>
+
+    <audio preload="metadata" controls> <!-- o navegador tentará carregar de cima pra baixo, até encontrar um áudio compátivel -->
+        <source src="audioAqui.mp3" type="audio.mpeg">
+        <source src="audioAqui.ogg" type="audio.ogg">
+        <source src="audioAqui.wav" type="audio.wav">
+    </audio>    
+</body>
+</html>
